@@ -24,7 +24,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_vpc" "default" {
-  default : true
+  default = true
 }
 resource "aws_instance" "blog" {
   ami                    = data.aws_ami.app_ami.id
