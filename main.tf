@@ -36,7 +36,7 @@ resource "aws_instance" "blog" {
 }
 
 resource "aws_security_group" "blog" {
-  name        = "blog",
+  name        = "blog"
   description = "Allow http and Https in Allow anything in"
 
   vpc_id = aws_vpc.default.id
